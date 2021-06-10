@@ -8,7 +8,7 @@ java_library(
         "//src/main/java/de/melsicon/example/spring_data/config",
         "//src/main/java/de/melsicon/example/spring_data/entity",
         "//src/main/java/de/melsicon/example/spring_data/repository",
-        "//toolchain:nullaway",
+        "//toolchain:checker",
         "//toolchain:spring_context",
         "@maven//:com_google_errorprone_error_prone_annotations",
         "@maven//:com_google_flogger_flogger",

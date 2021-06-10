@@ -14,7 +14,6 @@ java_library(
         "//src/main/java/de/melsicon/example/spring_data/repository",
         "//toolchain:assertj",
         "//toolchain:checker",
-        "//toolchain:nullaway",
         "@maven//:com_querydsl_querydsl_core",
         "@maven//:org_springframework_boot_spring_boot_test",
         "@maven//:org_springframework_boot_spring_boot_test_autoconfigure",

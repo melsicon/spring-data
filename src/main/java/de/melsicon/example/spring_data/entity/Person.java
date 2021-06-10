@@ -15,6 +15,7 @@ import javax.persistence.OneToMany;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
 @Entity
+@SuppressWarnings("allcheckers:type.anno.before.modifier")
 public class Person {
   @Id
   @GeneratedValue(strategy = IDENTITY)
@@ -29,6 +30,7 @@ public class Person {
   @OneToMany(cascade = ALL, mappedBy = "person", fetch = FetchType.EAGER)
   private List<EmailAddress> email;
 
+  @SuppressWarnings("nullness:initialization.fields.uninitialized")
   protected Person() {}
 
   public Person(String givenName, @Nullable String surname) {

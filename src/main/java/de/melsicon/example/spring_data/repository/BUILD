@@ -6,7 +6,7 @@ java_library(
     visibility = ["//visibility:public"],
     deps = [
         "//src/main/java/de/melsicon/example/spring_data/entity",
-        "//toolchain:nullaway",
+        "//toolchain:checker",
         "//toolchain:spring_context",
         "@maven//:com_google_errorprone_error_prone_annotations",
         "@maven//:com_querydsl_querydsl_jpa",

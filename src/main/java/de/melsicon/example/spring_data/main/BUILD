@@ -24,7 +24,6 @@ java_library(
         "//src/main/java/de/melsicon/example/spring_data/repository",
         "//src/main/java/de/melsicon/example/spring_data/runner",
         "//toolchain:checker",
-        "//toolchain:nullaway",
         "@maven//:com_google_errorprone_error_prone_annotations",
         "@maven//:com_google_flogger_flogger",
         "@maven//:org_springframework_boot_spring_boot",

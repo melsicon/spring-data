@@ -22,7 +22,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class PersonRepositoryTest {
   @Autowired
-  @SuppressWarnings({"NullAway.Init", "nullness:initialization.field.uninitialized"})
+  @SuppressWarnings("nullness:initialization.field.uninitialized")
   private PersonRepository people;
 
   @Test
@@ -43,6 +43,7 @@ public class PersonRepositoryTest {
   }
 
   @Test
+  @SuppressWarnings("optional:methodref.receiver")
   public void queryDynamic() {
     var person = new PathBuilder<>(Person.class, "person");
 

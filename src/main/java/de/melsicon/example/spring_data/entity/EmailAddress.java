@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import org.checkerframework.checker.nullness.qual.Nullable;
 
 @Entity
 public class EmailAddress {
@@ -17,6 +18,7 @@ public class EmailAddress {
   @Id
   private String address;
 
+  @SuppressWarnings("nullness:initialization.fields.uninitialized")
   protected EmailAddress() {}
 
   public EmailAddress(Person person, String address) {
@@ -46,7 +48,7 @@ public class EmailAddress {
   }
 
   @Override
-  public boolean equals(Object o) {
+  public boolean equals(@Nullable Object o) {
     if (this == o) {
       return true;
     }

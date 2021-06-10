@@ -9,7 +9,6 @@ java_library(
     ],
     deps = [
         "//toolchain:checker",
-        "//toolchain:nullaway",
         "@maven//:com_google_errorprone_error_prone_annotations",
         "@maven//:com_google_flogger_flogger",
         "@maven//:io_github_classgraph_classgraph",
