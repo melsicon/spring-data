@@ -6,6 +6,7 @@
 !/.gitattributes
 !/.gitignore
 !/.yamllint
+!/.github/
 # idea
 /*.iml
 out/
