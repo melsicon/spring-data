@@ -1,5 +1,9 @@
 = Spring Data Playground
 :toc: macro
+ifdef::env-github[]
+:note-caption: :information_source:
+:tip-caption: :bulb:
+endif::[]
 
 Demo code to discuss Spring Data REST features.
 

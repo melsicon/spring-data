@@ -118,6 +118,7 @@ java_plugin(
     deps = [
         "@maven//:com_querydsl_querydsl_apt",
         "@maven//:jakarta_annotation_jakarta_annotation_api",
+        "@maven//:jakarta_persistence_jakarta_persistence_api",
     ],
 )
 
@@ -128,6 +129,7 @@ java_library(
     exports = [
         "@maven//:com_querydsl_querydsl_core",
         "@maven//:jakarta_annotation_jakarta_annotation_api",
+        "@maven//:org_jetbrains_annotations",
     ],
 )
 
